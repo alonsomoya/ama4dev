@@ -6,9 +6,8 @@
 
 In this challenge you will have to find the cheapest route to this conference
 
-[:fontawesome-solid-code-pull-request: Make a Pull Request to gain 5 points ](https://github.com/alonsomoya/ama4dev/pulls){ .md-button }
+[Make a Pull Request to gain 5 points ](https://github.com/alonsomoya/ama4dev/pulls){ .md-button }
 
 ## Leaderboard
 
 <iframe width="100%" height="800px" src="https://keepthescore.co/board/akayayjlgzr/" frameborder="0" allowfullscreen></iframe>
-
