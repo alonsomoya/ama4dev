@@ -36,6 +36,11 @@ markdown_extensions:
       linenums: true
   - pymdownx.tabbed
   - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 
 plugins:
   - search
@@ -81,6 +86,8 @@ nav:
     - Examples and Prototypes:
         - Code examples: examples/code-example.md
         - Prototypes: examples/prototypes.md
+    - Challenges:
+        - DevOpsCon Munich 2022: challenges/devopsconmuc2022.md
     
 
 extra:
