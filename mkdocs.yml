@@ -54,8 +54,8 @@ site_url: https://developers.amadeus.com
 site_description: Amadeus for Developers Documentation
 site_author: Amadeus for Developers
 
-repo_name: amadeus4dev/developer-guides
-repo_url: https://github.com/amadeus4dev/developer-guides
+repo_name: alonsomoya/ama4dev
+repo_url: https://github.com/alonsomoya/ama4dev
 
 copyright: Copyright © Amadeus IT Group S.A.
 
@@ -100,6 +100,3 @@ extra:
       link: https://twitter.com/amadeus4dev
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/showcase/amadeus-for-developers
-  analytics:
-    provider: google
-    property: G-4BPFT57T5Z
