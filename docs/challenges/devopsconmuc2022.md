@@ -1,6 +1,6 @@
 # DevOpsCon Munich 2022 Challenge
 
-!!! tip "Join the Amadeus Competition to win an exclusive **hug from Julius** 🫂"
+!!! tip "Join the Amadeus Competition to win a **Nintendo Switch™** 🎮"
 
 ## Find your way to the conference
 
