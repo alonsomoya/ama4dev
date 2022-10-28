@@ -6,7 +6,7 @@
 
 In this challenge you will have to find the cheapest route from your city of birth to this conference
 
-[Join the challenge to win up to 10 points](https://classroom.github.com/a/bVOew8vj){ .md-button }
+[Join the challenge to win up to 10 points](https://classroom.github.com/a/wuP2aiju){ .md-button }
 
 
 ## Leaderboard
