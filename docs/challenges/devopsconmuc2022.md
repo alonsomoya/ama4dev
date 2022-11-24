@@ -2,9 +2,7 @@
 
 !!! tip "Join the Amadeus Competition to win a **Nintendo Switch™** 🎮"
 
-## Find your way to the conference
-
-In this challenge you will have to find the cheapest route from your city of birth to this conference.
+In this challenge you will have to find the furthest german airports from Munich. Minimizing the number of calls to the API gives extra points.
 
 [Join the challenge to win up to 33 points](https://classroom.github.com/a/c6-B9EAH){ .md-button }
 
