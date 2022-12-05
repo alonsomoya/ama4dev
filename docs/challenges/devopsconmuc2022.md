@@ -12,7 +12,7 @@ In this challenge you will have to find the furthest german airports from Munich
 
     You will find the instructions of the challenge in the `README.me`.
 
-    If you don't have an IDE configured you can go directly to `https://github.dev/ama4dev-challenges/amachallenge-cheapest-route-<YOUR_GH_USERNAME>`.
+    If you don't have an IDE configured you can go directly to `https://github.dev/ama4dev-challenges/amachallenge-furthestairports-<YOUR_GH_USERNAME>`.
 
     In order to submit the challenge set the milestone `completed` in the feedback PR to get it reviewed and gain the points before the submission deadline.
 
