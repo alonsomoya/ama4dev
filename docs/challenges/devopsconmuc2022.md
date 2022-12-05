@@ -7,7 +7,7 @@ In this challenge you will have to find the furthest german airports from Munich
 
 [Join the challenge to win up to 33 points](https://classroom.github.com/a/c6-B9EAH){ .md-button }
 
-??? abstract "Submission Guidelines"
+!!! abstract "Submission Guidelines"
     When you join the challenge you will get a repository and a feedback PR automatically created for you.
 
     You will find the instructions of the challenge in the `README.me`.
