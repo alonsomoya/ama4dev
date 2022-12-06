@@ -1,0 +1,2867 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Amadeus for Developers Documentation">
+      
+      
+        <link rel="canonical" href="https://developers.amadeus.com/resources/flights/">
+      
+      
+        <meta name="author" content="Amadeus for Developers">
+      
+      <link rel="shortcut icon" href="../../icons/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>Flights - Amadeus for Developers</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.18d90a45.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.1c8a562c.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amadeus:300,400,400i,700%7CSource+Sans+Pro&display=fallback">
+        <style>body,input{font-family:"Amadeus",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Source Sans Pro",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../css/amadeus.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#flights" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-announce">
+          <div class="md-announce__inner md-grid md-typeset">
+            
+🚀 One more day to finish the challenge. Commit your changes you redeem points. We will be giving the 🎮 Nintendo Switch™ to the winner **tomorrow at 12** in the Amadeus booth
+
+
+          </div>
+        </aside>
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://developers.amadeus.com" title="Amadeus for Developers" class="md-header-nav__button md-logo" aria-label="Amadeus for Developers">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Amadeus for Developers
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Flights
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/alonsomoya/ama4dev/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alonsomoya/ama4dev
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://developers.amadeus.com" title="Amadeus for Developers" class="md-nav__button md-logo" aria-label="Amadeus for Developers">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    Amadeus for Developers
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/alonsomoya/ama4dev/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alonsomoya/ama4dev
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../quick-start/" title="Quick Start" class="md-nav__link">
+      Quick Start
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../pricing/" title="Pricing" class="md-nav__link">
+      Pricing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../test-data/" title="Free Test Data Collection" class="md-nav__link">
+      Free Test Data Collection
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      API Keys
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="API Keys" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        API Keys
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../API-Keys/authorization/" title="Authorization" class="md-nav__link">
+      Authorization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../API-Keys/moving-to-production/" title="Production" class="md-nav__link">
+      Production
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../api-rate-limits/" title="Rate Limits" class="md-nav__link">
+      Rate Limits
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../pagination/" title="Pagination" class="md-nav__link">
+      Pagination
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../common-errors/" title="Common Errors" class="md-nav__link">
+      Common Errors
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
+    
+    <label class="md-nav__link" for="nav-9">
+      API Tutorials
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="API Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        API Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../covid-19/" title="Covid-19 & travel Safety" class="md-nav__link">
+      Covid-19 & travel Safety
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Flights
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Flights" class="md-nav__link md-nav__link--active">
+      Flights
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#search-flights" class="md-nav__link">
+    Search flights
+  </a>
+  
+    <nav class="md-nav" aria-label="Search flights">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-to-get-flight-inspirations" class="md-nav__link">
+    Search to get flight inspirations
+  </a>
+  
+    <nav class="md-nav" aria-label="Search to get flight inspirations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-for-destinations-for-a-specific-duration-of-stay" class="md-nav__link">
+    Search for destinations for a specific duration of stay
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-cheapest-flights-regardless-of-the-dates" class="md-nav__link">
+    Search for cheapest flights regardless of the dates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-best-flight-offers" class="md-nav__link">
+    Search for best flight offers
+  </a>
+  
+    <nav class="md-nav" aria-label="Search for best flight offers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-for-flights-including-or-excluding-specific-airlines" class="md-nav__link">
+    Search for flights including or excluding specific airlines
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-the-best-flight-option" class="md-nav__link">
+    Search for the best flight option
+  </a>
+  
+    <nav class="md-nav" aria-label="Search for the best flight option">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-for-flight-offers-for-multiple-cities" class="md-nav__link">
+    Search for flight offers for multiple cities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-using-loyalty-programs" class="md-nav__link">
+    Search using loyalty programs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-routes-from-a-specific-airport" class="md-nav__link">
+    Search for routes from a specific airport
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-routes-for-a-specific-airline" class="md-nav__link">
+    Search for routes for a specific airline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#look-up-the-airline-icao-code-by-the-iata-code" class="md-nav__link">
+    Look up the airline ICAO code by the IATA code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-flight-and-fare-availability" class="md-nav__link">
+    Search for flight and fare availability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-branded-fares" class="md-nav__link">
+    Search branded fares
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-personalized-destination-recommendations" class="md-nav__link">
+    Search for personalized destination recommendations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-recommended-nearby-destinations" class="md-nav__link">
+    Search for recommended nearby destinations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-a-city-that-has-an-airport" class="md-nav__link">
+    Search for a city that has an airport
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compare-the-flight-price-to-histrocal-fares" class="md-nav__link">
+    Compare the flight price to histrocal fares
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confirm-fares" class="md-nav__link">
+    Confirm Fares
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return-fare-rules" class="md-nav__link">
+    Return fare rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#book-a-flight" class="md-nav__link">
+    Book a Flight
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#issue-a-ticket" class="md-nav__link">
+    Issue a ticket
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-the-aircraft-cabin-layout" class="md-nav__link">
+    View the aircraft cabin layout
+  </a>
+  
+    <nav class="md-nav" aria-label="View the aircraft cabin layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-in-flight-amenities" class="md-nav__link">
+    Display in-flight amenities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-a-seat" class="md-nav__link">
+    Select a seat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-additional-baggage" class="md-nav__link">
+    Add additional baggage
+  </a>
+  
+    <nav class="md-nav" aria-label="Add additional baggage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-additional-baggage-options" class="md-nav__link">
+    Search additional baggage options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-additional-baggage-to-the-flight-offer" class="md-nav__link">
+    Add additional baggage to the flight offer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confirm-the-final-price-and-book" class="md-nav__link">
+    Confirm the final price and book
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-flight-status" class="md-nav__link">
+    Check the flight status
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-for-any-flight-delays" class="md-nav__link">
+    Check for any flight delays
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-on-time-performance-of-an-airport" class="md-nav__link">
+    Check the on-time performance of an airport
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-a-direct-link-to-the-airline-check-in-page" class="md-nav__link">
+    Get a direct link to the airline check-in page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cancel-a-reservation" class="md-nav__link">
+    Cancel a reservation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-reservation-details" class="md-nav__link">
+    View reservation details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-errors" class="md-nav__link">
+    Common Errors
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issuance-not-allowed-in-self-service" class="md-nav__link">
+    Issuance not allowed in Self Service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#price-discrepancy" class="md-nav__link">
+    Price discrepancy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+    <nav class="md-nav" aria-label="Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#carriers-and-rates" class="md-nav__link">
+    Carriers and rates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-booking-modifications" class="md-nav__link">
+    Post-booking modifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-payment-works" class="md-nav__link">
+    How payment works
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hotels/" title="Hotels" class="md-nav__link">
+      Hotels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../destination-experiences/" title="Destination experiences" class="md-nav__link">
+      Destination experiences
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../itinerary-managment/" title="Itinerary management" class="md-nav__link">
+      Itinerary management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../market-insight/" title="Market insights" class="md-nav__link">
+      Market insights
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      SDK Tutorials
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="SDK Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        SDK Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdks/sdk-overview/" title="Amadeus SDK overview" class="md-nav__link">
+      Amadeus SDK overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdks/node-sdk/" title="Node SDK" class="md-nav__link">
+      Node SDK
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdks/python-sdk/" title="Python SDK" class="md-nav__link">
+      Python SDK
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdks/java-sdk/" title="Java SDK" class="md-nav__link">
+      Java SDK
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sdks/openapi-generator/" title="Using OpenAPI Generator" class="md-nav__link">
+      Using OpenAPI Generator
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Examples and Prototypes
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Examples and Prototypes" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Examples and Prototypes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../examples/code-example/" title="Code examples" class="md-nav__link">
+      Code examples
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../examples/prototypes/" title="Prototypes" class="md-nav__link">
+      Prototypes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Challenges
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Challenges" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Challenges
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../challenges/devopsconmuc2022/" title="DevOpsCon Munich 2022" class="md-nav__link">
+      DevOpsCon Munich 2022
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#search-flights" class="md-nav__link">
+    Search flights
+  </a>
+  
+    <nav class="md-nav" aria-label="Search flights">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-to-get-flight-inspirations" class="md-nav__link">
+    Search to get flight inspirations
+  </a>
+  
+    <nav class="md-nav" aria-label="Search to get flight inspirations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-for-destinations-for-a-specific-duration-of-stay" class="md-nav__link">
+    Search for destinations for a specific duration of stay
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-cheapest-flights-regardless-of-the-dates" class="md-nav__link">
+    Search for cheapest flights regardless of the dates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-best-flight-offers" class="md-nav__link">
+    Search for best flight offers
+  </a>
+  
+    <nav class="md-nav" aria-label="Search for best flight offers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-for-flights-including-or-excluding-specific-airlines" class="md-nav__link">
+    Search for flights including or excluding specific airlines
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-the-best-flight-option" class="md-nav__link">
+    Search for the best flight option
+  </a>
+  
+    <nav class="md-nav" aria-label="Search for the best flight option">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-for-flight-offers-for-multiple-cities" class="md-nav__link">
+    Search for flight offers for multiple cities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-using-loyalty-programs" class="md-nav__link">
+    Search using loyalty programs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-routes-from-a-specific-airport" class="md-nav__link">
+    Search for routes from a specific airport
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-routes-for-a-specific-airline" class="md-nav__link">
+    Search for routes for a specific airline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#look-up-the-airline-icao-code-by-the-iata-code" class="md-nav__link">
+    Look up the airline ICAO code by the IATA code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-flight-and-fare-availability" class="md-nav__link">
+    Search for flight and fare availability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-branded-fares" class="md-nav__link">
+    Search branded fares
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-personalized-destination-recommendations" class="md-nav__link">
+    Search for personalized destination recommendations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-recommended-nearby-destinations" class="md-nav__link">
+    Search for recommended nearby destinations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-a-city-that-has-an-airport" class="md-nav__link">
+    Search for a city that has an airport
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compare-the-flight-price-to-histrocal-fares" class="md-nav__link">
+    Compare the flight price to histrocal fares
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confirm-fares" class="md-nav__link">
+    Confirm Fares
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#return-fare-rules" class="md-nav__link">
+    Return fare rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#book-a-flight" class="md-nav__link">
+    Book a Flight
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#issue-a-ticket" class="md-nav__link">
+    Issue a ticket
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-the-aircraft-cabin-layout" class="md-nav__link">
+    View the aircraft cabin layout
+  </a>
+  
+    <nav class="md-nav" aria-label="View the aircraft cabin layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-in-flight-amenities" class="md-nav__link">
+    Display in-flight amenities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-a-seat" class="md-nav__link">
+    Select a seat
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-additional-baggage" class="md-nav__link">
+    Add additional baggage
+  </a>
+  
+    <nav class="md-nav" aria-label="Add additional baggage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-additional-baggage-options" class="md-nav__link">
+    Search additional baggage options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-additional-baggage-to-the-flight-offer" class="md-nav__link">
+    Add additional baggage to the flight offer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confirm-the-final-price-and-book" class="md-nav__link">
+    Confirm the final price and book
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-flight-status" class="md-nav__link">
+    Check the flight status
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-for-any-flight-delays" class="md-nav__link">
+    Check for any flight delays
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-the-on-time-performance-of-an-airport" class="md-nav__link">
+    Check the on-time performance of an airport
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-a-direct-link-to-the-airline-check-in-page" class="md-nav__link">
+    Get a direct link to the airline check-in page
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cancel-a-reservation" class="md-nav__link">
+    Cancel a reservation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-reservation-details" class="md-nav__link">
+    View reservation details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-errors" class="md-nav__link">
+    Common Errors
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Errors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issuance-not-allowed-in-self-service" class="md-nav__link">
+    Issuance not allowed in Self Service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#price-discrepancy" class="md-nav__link">
+    Price discrepancy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+    <nav class="md-nav" aria-label="Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#carriers-and-rates" class="md-nav__link">
+    Carriers and rates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-booking-modifications" class="md-nav__link">
+    Post-booking modifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-payment-works" class="md-nav__link">
+    How payment works
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/alonsomoya/ama4dev/edit/master/docs/resources/flights.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="flights">Flights</h1>
+<p>The <strong>Flights</strong> category contains a wide array of APIs that can help you manage flights, from searching for flight options to actually booking a flight.</p>
+<div class="admonition information">
+<p class="admonition-title">Information</p>
+<p>Our catalogue of <a href="https://developers.amadeus.com/self-service">Self-Service APIs</a> is currently organised by categories that are different to what you see on this page.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>APIs</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Flight booking</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search</a></td>
+<td>Lets you can search flights between two cities, perform multi-city searches for longer itineraries and access one-way combinable fares to offer the cheapest options possible.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price</a></td>
+<td>Confirms the availability and final price (including taxes and fees) of flights returned by the Flight Offers Search API.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders</a></td>
+<td>Provides a unique booking ID and reservation details once the reservation is completed.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-order-management">Flight Order Management</a></td>
+<td>Checks the latest status of a reservation, shows post-booking modifications like ticket information or form of payment and lets you cancel reservations.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/seatmap-display">Seatmap Display</a></td>
+<td>Shows airplane cabin plan from a Flight Offer in order for the traveler to be able to choose their seat during the flight booking flow.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/branded-fares-upsell">Branded Fares Upsell</a></td>
+<td>Provides the branded fares available for a given flight, along with pricing and a fare description.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-price-analysis">Flight Price Analysis</a></td>
+<td>Uses an Artificial Intelligence algorithm trained on Amadeus historical flight booking data to show how current flight prices compare to historical fares and whether the price of a flight is below or above average.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-choice-prediction">Flight Choice Prediction</a></td>
+<td>Uses Artificial Intelligence and Amadeus historical flight booking data to identify which flights in search results are most likely to be booked.</td>
+</tr>
+<tr>
+<td><strong>Flight inspiration</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-inspiration-search">Flight Inspiration Search</a></td>
+<td>Provides a list of destinations from a given city that is ordered by price and can be filtered by departure date or maximum price.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-cheapest-date-search">Flight Cheapest Date Search</a></td>
+<td>Provides a list of flight options with dates and prices, and allows you to order by price, departure date or duration.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-availabilities-search">Flight Availabilities Search</a></td>
+<td>Provides a list of flights with seats for sale on a given itinerary and the quantity of seats available in different fare classes.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/trip/api-doc/travel-recommendations">Travel Recommendations</a></td>
+<td>Uses Artificial Intelligence trained on Amadeus historical flight search data to determine which destinations are also popular among travelers with similar profiles, and provides a list of recommended destinations with name, IATA code, coordinates and similarity score.</td>
+</tr>
+<tr>
+<td><strong>Flight schedule</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/on-demand-flight-status">On Demand Flight Status</a></td>
+<td>Pprovides real-time flight schedule data including up-to-date departure and arrival times, terminal and gate information, flight duration and real-time delay status. Help travelers track the live status of their flight and enjoy a stress-free trip.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-delay-prediction">Flight Delay Prediction</a></td>
+<td>Provides delay probabilities for four possible delay lengths</td>
+</tr>
+<tr>
+<td><strong>Airport</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-and-city-search">Airport &amp; City Search</a></td>
+<td>Finds airports and cities that match a specific word or a string of letters.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-nearest-relevant">Airport Nearest Relevant</a></td>
+<td>Provides a list of commercial airports within a 500km (311mi) radius of a given point that are ordered by relevance, which considers their distance from the starting point and their yearly flight traffic.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-routes">Airport Routes API</a></td>
+<td>Finds all destinations served by a given airport.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-on-time-performance">Airport On-Time Performance</a></td>
+<td>Predicts an airport's overall performance based on the delay of all flights during a day.</td>
+</tr>
+<tr>
+<td><strong>Airlines</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-check-in-links">Flight Check-in Links</a></td>
+<td>Simplifies the check-in process by providing direct links to the airline check-in page.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/airline-code-lookup">Airline Code Lookup</a></td>
+<td>Finds the name of an airline by its IATA or ICAO airline codes.</td>
+</tr>
+<tr>
+<td><a href="https://developers.amadeus.com/self-service/category/air/api-doc/airline-routes">Airline Routes</a></td>
+<td>Finds all destinations served by a given airline.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="search-flights">Search flights</h2>
+<h3 id="search-to-get-flight-inspirations">Search to get flight inspirations</h3>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-inspiration-search">Flight Inspiration Search API</a> provides a list of destinations from a given airport that is ordered by price and can be filtered by departure date or maximum price. The following request retrieves a list of destinations from Boston:</p>
+<div class="highlight"><pre><span></span><code>GET https://test.api.amadeus.com/v1/shopping/flight-destinations?origin<span class="o">=</span>BOS
+</code></pre></div>
+
+<div class="admonition information">
+<p class="admonition-title">Information</p>
+<p>This API returns cached prices. Once a destination is chosen, use the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> to get real-time pricing and availability.</p>
+</div>
+<p>The API provides a link to the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> to search for flights once a
+destination is chosen and a link to the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-cheapest-date-search">Flight Cheapest Date Search API</a> to check the
+cheapest dates to fly:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-destination&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;origin&quot;</span><span class="p">:</span> <span class="s2">&quot;BOS&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;CHI&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;departureDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-07-22&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;returnDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-07-28&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;52.18&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;flightDates&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/shopping/flight-dates?origin=BOS&amp;destination=CHI&amp;departureDate=2022-07-02,2022-12-28&amp;oneWay=false&amp;duration=1,15&amp;nonStop=false&amp;maxPrice=300&amp;currency=USD&amp;viewBy=DURATION&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;flightOffers&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=BOS&amp;destinationLocationCode=CHI&amp;departureDate=2022-07-22&amp;returnDate=2022-07-28&amp;adults=1&amp;nonStop=false&amp;maxPrice=300&amp;currency=USD&quot;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+</code></pre></div>
+
+<h4 id="search-for-destinations-for-a-specific-duration-of-stay">Search for destinations for a specific duration of stay</h4>
+<p>For example, let's say a traveler wants to spend six days in a city but doesn't have a strong preference for the destination. With the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-inspiration-search">Flight Inspiration Search API</a> we can recommend the traveler the cheapest destinations based on the stay duration. </p>
+<p>This can be done using the parameter <code>viewBy</code> which returns flight destinations by <code>DATE</code>, <code>DESTINATION</code>, <code>DURATION</code>, <code>WEEK</code>, or <code>COUNTRY</code>. In our scenario we need to pass the value <code>DURATION</code> to the parameter <code>viewBy</code>, like in the example below. Also, as input we give a duration of six days and origin Miami. The departure date will be between the 1st and 3rd of September 2021.</p>
+<p><code>GET https://test.api.amadeus.com/v1/shopping/flight-destinations?departureDate=2021-09-01,2021-09-03&amp;duration=6&amp;origin=MIA&amp;viewBy=DURATION</code></p>
+<div class="highlight"><pre><span></span><code>  <span class="p">{</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-destination&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;origin&quot;</span><span class="p">:</span> <span class="s2">&quot;MIA&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;MSP&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;departureDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-09-01&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;returnDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-09-07&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;136.79&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;flightDates&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MIA&amp;destination=MSP&amp;departureDate=2021-09-01,2021-09-03&amp;oneWay=false&amp;duration=6&amp;nonStop=false&amp;viewBy=DURATION&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;flightOffers&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MIA&amp;destinationLocationCode=MSP&amp;departureDate=2021-09-01&amp;returnDate=2021-09-07&amp;adults=1&amp;nonStop=false&quot;</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-destination&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;origin&quot;</span><span class="p">:</span> <span class="s2">&quot;MIA&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;STT&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;departureDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-09-02&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;returnDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-09-08&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;137.36&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;flightDates&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MIA&amp;destination=STT&amp;departureDate=2021-09-01,2021-09-03&amp;oneWay=false&amp;duration=6&amp;nonStop=false&amp;viewBy=DURATION&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;flightOffers&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MIA&amp;destinationLocationCode=STT&amp;departureDate=2021-09-02&amp;returnDate=2021-09-08&amp;adults=1&amp;nonStop=false&quot;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+</code></pre></div>
+
+<p>As you can see, all the recommendations have a duration of six days and are sorted by the lowest price. The API also provides link to the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> for each result in order to check for available flights.</p>
+<h3 id="search-for-cheapest-flights-regardless-of-the-dates">Search for cheapest flights regardless of the dates</h3>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-cheapest-date-search">Flight Cheapest Date Search API</a> finds the cheapest dates to travel from one
+city to another. The API provides a list of flight options with dates and prices,
+and allows you to order by price, departure date or duration.</p>
+<div class="admonition information">
+<p class="admonition-title">Information</p>
+<p>This API returns cached prices. Once the dates are chosen, use the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> to get real-time pricing and availability.</p>
+</div>
+<p>The following example retrieves a list of <code>flight-date</code> objects containing pricing information given the origin and destination, and a range of dates:</p>
+<div class="highlight"><pre><span></span><code>GET https://test.api.amadeus.com/v1/shopping/flight-dates?origin<span class="o">=</span>BOS<span class="p">&amp;</span><span class="nv">destination</span><span class="o">=</span>CHI<span class="p">&amp;</span><span class="nv">departureDate</span><span class="o">=</span><span class="m">2022</span>-08-15,2022-08-28
+</code></pre></div>
+
+<p>The API provides a link to the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> to search for flights once a
+destination is chosen, in order to proceed with the booking flow.</p>
+<h3 id="search-for-best-flight-offers">Search for best flight offers</h3>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> searches over 500 airlines to find the cheapest
+flights for a given itinerary. The API lets you search flights between two
+cities, perform multi-city searches for longer itineraries and access one-way
+combinable fares to offer the cheapest options possible. For each itinerary,
+the API provides a list of flight offers with prices, fare details, airline
+names, baggage allowances and departure terminals.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>Flights from low-cost carriers and American Airlines are currently unavailable.</li>
+</ul>
+</div>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a>  starts the booking cycle with a search for the
+best fares. The API returns a list of the cheapest flights given a city/airport
+of departure, a city/airport of arrival, the number and type of passengers and
+travel dates. The results are complete with airline name and fares as well as
+additional information, such as bag allowance and pricing for additional baggage. </p>
+<p>The API comes in two flavors:</p>
+<ul>
+<li>Simple version: GET operation with few parameters but which is quicker to integrate.</li>
+<li>On steroids: POST operation offering the full functionalities of the API.</li>
+</ul>
+<p>The minimum <code>GET</code> request has following parameters:</p>
+<div class="highlight"><pre><span></span><code>GET https://test.api.amadus.com/v2/shopping/flight-offers?adults<span class="o">=</span><span class="m">1</span><span class="p">&amp;</span><span class="nv">originLocationCode</span><span class="o">=</span>BOS<span class="p">&amp;</span><span class="nv">destinationLocationCode</span><span class="o">=</span>CHI<span class="p">&amp;</span><span class="nv">departureDate</span><span class="o">=</span><span class="m">2022</span>-07-22
+</code></pre></div>
+
+<p>The API returns a list of <code>flight-offer</code> objects (up to 250), including
+information such as itineraries, price, pricing options, etc.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-offer&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;GDS&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;instantTicketingRequired&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="nt">&quot;nonHomogeneous&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="nt">&quot;oneWay&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="nt">&quot;lastTicketingDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-07-02&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+      <span class="nt">&quot;itineraries&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="p">],</span>
+      <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;22.00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;13.00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;fees&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;SUPPLIER&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;TICKETING&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;grandTotal&quot;</span><span class="p">:</span> <span class="s2">&quot;22.00&quot;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+</code></pre></div>
+
+<h4 id="search-for-flights-including-or-excluding-specific-airlines">Search for flights including or excluding specific airlines</h4>
+<p>If you want your search to return flights with only specified airlines, you can use the parameter <code>includedAirlineCodes</code> to consider specific airlines. For example, there is a traveler who wants to travel from Berlin to Athens only with Aegean Airlines (A3): </p>
+<p><code>GET https://test.api.amadeus.com/v2/shopping/flight-offers?max=3&amp;adults=1&amp;includedAirlineCodes=A3&amp;originLocationCode=BER&amp;destinationLocationCode=ATH&amp;departureDate=2022-12-06</code></p>
+<p>With the parameter <code>excludedAirlineCodes</code> you can ignore specific airlines. For example, there is a traveler who wants to travel from Berlin to Athens ignoring both Aegean Airlines (A3) and Iberia (IB):</p>
+<p><code>GET https://test.api.amadeus.com/v2/shopping/flight-offers?max=3&amp;adults=1&amp;excludedAirlineCodes=A3,IB&amp;originLocationCode=BER&amp;destinationLocationCode=ATH&amp;departureDate=2021-09-06</code></p>
+<h3 id="search-for-the-best-flight-option">Search for the best flight option</h3>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-choice-prediction">Flight Choice Prediction API</a> predicts the flight your users will choose.
+Our machine-learning models have analyzed historical interactions with the
+<a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> and can determine each flight’s probability of being
+chosen. Boost conversions and create a personalized experience by filtering out
+the noise and showing your users the flights which are best for them.</p>
+<p>Here is a quick cURL example piping the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> results directly to the prediction API.</p>
+<p>Let’s look at flight offers for a Madrid-New York round trip (limiting to four options for this test illustration)</p>
+<div class="highlight"><pre><span></span><code>curl --request GET <span class="se">\</span>
+     --header <span class="s1">&#39;Authorization: Bearer &lt;token&gt;&#39;</span> <span class="se">\</span>
+     --url https://test.api.amadeus.com/v2/shopping/flight-offers<span class="se">\?</span>origin<span class="se">\=</span>MAD<span class="se">\&amp;</span>destination<span class="se">\=</span>NYC<span class="se">\&amp;</span>departureDate<span class="se">\=</span><span class="m">2019</span>-08-24<span class="se">\&amp;</span>returnDate<span class="se">\=</span><span class="m">2019</span>-09-19<span class="se">\&amp;</span>adults<span class="se">\=</span><span class="m">1</span> <span class="se">\</span>
+<span class="p">|</span> curl --request POST <span class="se">\</span>
+       --header <span class="s1">&#39;content-type: application/json&#39;</span> <span class="se">\</span>
+       --header <span class="s1">&#39;Authorization: Bearer &lt;token&gt;&#39;</span> <span class="se">\</span>
+       --url https://test.api.amadeus.com/v2/shopping/flight-offers/prediction --data @-
+</code></pre></div>
+
+<p>The prediction API returns the same content as the Low Fare search with the
+addition of the <code>choiceProbability</code> field for each flight offer element.</p>
+<div class="highlight"><pre><span></span><code> <span class="p">{</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;choiceProbability&quot;</span><span class="p">:</span> <span class="s2">&quot;0.9437563627430908&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1558602440311-352021104&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;offerItems&quot;</span><span class="p">:</span> <span class="p">[</span><span class="err">...</span><span class="p">],</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-offer&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;choiceProbability&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0562028823257711&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1558602440311--1831925786&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;offerItems&quot;</span><span class="p">:</span> <span class="p">[</span><span class="err">...</span><span class="p">],</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-offer&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;choiceProbability&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0000252425060482&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1558602440311-480701674&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;offerItems&quot;</span><span class="p">:</span> <span class="p">[</span><span class="err">...</span><span class="p">],</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-offer&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;choiceProbability&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0000155124250899&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1558602440311--966634676&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;offerItems&quot;</span><span class="p">:</span> <span class="p">[</span><span class="err">...</span><span class="p">],</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-offer&quot;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;dictionaries&quot;</span><span class="p">:</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h4 id="search-for-flight-offers-for-multiple-cities">Search for flight offers for multiple cities</h4>
+<p>Many travelers take advantage of their international trips to visit several
+destinations. Multi-city search is a functionality that lets you search for
+consecutive one-way flights between multiple destinations in a single request.
+The returned flights are packaged as a complete, bookable itinerary. </p>
+<p>To perform multi-city searches, you must use the <code>POST</code> method of the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a>. The API lets you search for up to six origin and
+destination city pairs.</p>
+<p>In the following example, we’ll fly from Madrid to Paris, where we’ll spend a couple of
+days, then fly to Munich for three days. Next, we’ll visit Amsterdam for two
+days before finishing our journey with a return to Madrid. We'll use the
+following IATA city codes: <code>MAD &gt; PAR &gt; MUC &gt; AMS &gt; MAD</code></p>
+<p>The request will look like this:</p>
+<div class="highlight"><pre><span></span><code>curl https://test.api.amadeus.com/v2/shopping/flight-offers <span class="se">\</span>
+-d <span class="s1">&#39;{ </span>
+<span class="s1">  &quot;originDestinations&quot;: [ </span>
+<span class="s1">    { </span>
+<span class="s1">      &quot;id&quot;: &quot;1&quot;, </span>
+<span class="s1">      &quot;originLocationCode&quot;: &quot;MAD&quot;, </span>
+<span class="s1">      &quot;destinationLocationCode&quot;: &quot;PAR&quot;, </span>
+<span class="s1">      &quot;departureDateTimeRange&quot;: { </span>
+<span class="s1">        &quot;date&quot;: &quot;2022-10-03&quot; </span>
+<span class="s1">      } </span>
+<span class="s1">    }, </span>
+<span class="s1">    { </span>
+<span class="s1">      &quot;id&quot;: &quot;2&quot;, </span>
+<span class="s1">      &quot;originLocationCode&quot;: &quot;PAR&quot;, </span>
+<span class="s1">      &quot;destinationLocationCode&quot;: &quot;MUC&quot;, </span>
+<span class="s1">      &quot;departureDateTimeRange&quot;: { </span>
+<span class="s1">        &quot;date&quot;: &quot;2022-10-05&quot; </span>
+<span class="s1">      } </span>
+<span class="s1">    }, </span>
+<span class="s1">    { </span>
+<span class="s1">      &quot;id&quot;: &quot;3&quot;, </span>
+<span class="s1">      &quot;originLocationCode&quot;: &quot;MUC&quot;, </span>
+<span class="s1">      &quot;destinationLocationCode&quot;: &quot;AMS&quot;, </span>
+<span class="s1">      &quot;departureDateTimeRange&quot;: { </span>
+<span class="s1">        &quot;date&quot;: &quot;2022-10-08&quot; </span>
+<span class="s1">      } </span>
+<span class="s1">    }, </span>
+<span class="s1">    { </span>
+<span class="s1">      &quot;id&quot;: &quot;4&quot;, </span>
+<span class="s1">      &quot;originLocationCode&quot;: &quot;AMS&quot;, </span>
+<span class="s1">      &quot;destinationLocationCode&quot;: &quot;MAD&quot;, </span>
+<span class="s1">      &quot;departureDateTimeRange&quot;: { </span>
+<span class="s1">        &quot;date&quot;: &quot;2022-10-11&quot; </span>
+<span class="s1">      } </span>
+<span class="s1">    } </span>
+<span class="s1">  ], </span>
+<span class="s1">  &quot;travelers&quot;: [ </span>
+<span class="s1">    { </span>
+<span class="s1">      &quot;id&quot;: &quot;1&quot;, </span>
+<span class="s1">      &quot;travelerType&quot;: &quot;ADULT&quot;, </span>
+<span class="s1">      &quot;fareOptions&quot;: [ </span>
+<span class="s1">        &quot;STANDARD&quot; </span>
+<span class="s1">      ] </span>
+<span class="s1">    } </span>
+<span class="s1">  ], </span>
+<span class="s1">  &quot;sources&quot;: [ </span>
+<span class="s1">    &quot;GDS&quot; </span>
+<span class="s1">  ], </span>
+<span class="s1">  &quot;searchCriteria&quot;: { </span>
+<span class="s1">    &quot;maxFlightOffers&quot;: 1 </span>
+<span class="s1">  } </span>
+<span class="s1">}&#39;</span> 
+</code></pre></div>
+
+<h4 id="search-using-loyalty-programs">Search using loyalty programs</h4>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a> and the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/seatmap-display">Seatmap Display API</a> both accept Frequent Flyer information so end-users can benefit from their loyalty program. When adding Frequent Flyer information, please remember that each airline policy is different, and some require additional information, such as passenger name, email or phone number to validate the account. If the validation fails, your user won’t receive their loyalty program advantages.</p>
+<h3 id="search-for-routes-from-a-specific-airport">Search for routes from a specific airport</h3>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-routes">Airport Routes API</a> shows all destinations from a given airport. To follow up on our previous example, let's check where we can fly to from Madrid (MAD). The options are obviously quite broad, so we can limit the maximum number of results to 10. Keep in mind that this limit will apply from the beginning of the results list in the alphabetical order of the airport IATA codes.</p>
+<p>The request will look like this:</p>
+<div class="highlight"><pre><span></span><code>curl --request GET <span class="se">\</span>
+     --header <span class="s1">&#39;Authorization: Bearer &lt;token&gt;&#39;</span> <span class="se">\</span>
+     --url https://test.api.amadeus.com/v1/airport/direct-destinations?departureAirportCode<span class="o">=</span>MAD<span class="p">&amp;</span><span class="nv">max</span><span class="o">=</span><span class="m">10</span> <span class="se">\</span>
+</code></pre></div>
+
+<p>So we can see the the following results:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/airport/direct-destinations?departureAirportCode=MAD&amp;max=10&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ALBACETE&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;ABC&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;LANZAROTE&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;ACE&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;MALAGA&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;AGP&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ALGHERO&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;AHO&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ALICANTE&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;ALC&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ALGIERS&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;ALG&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;AMMAN&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;AMM&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;AMSTERDAM&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;AMS&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ASUNCION&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;ASU&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ATHENS&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;ATH&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h3 id="search-for-routes-for-a-specific-airline">Search for routes for a specific airline</h3>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/airline-routes">Airline Routes API</a> shows all destinations for a given airline. To follow up on our previous example, let's check what destinations the British Airways fly to. There's definitely plenty of options, so we can limit the maximum number of results to two for the sake of simplicity. Keep in mind that this limit will apply from the beginning of the results list in the alphabetical order of the city names.</p>
+<p>The request will look like this:</p>
+<div class="highlight"><pre><span></span><code>curl --request GET <span class="se">\</span>
+     --header <span class="s1">&#39;Authorization: Bearer &lt;token&gt;&#39;</span> <span class="se">\</span>
+     --url https://test.api.amadeus.com/v1/airline/destinations?airlineCode<span class="o">=</span>BA<span class="p">&amp;</span><span class="nv">max</span><span class="o">=</span><span class="m">2</span> <span class="se">\</span>
+</code></pre></div>
+
+<p>So we can see the the following results:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Bangalore&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;BLR&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subtype&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Paris&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;PAR&quot;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sort&quot;</span><span class="p">:</span> <span class="s2">&quot;iataCode&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/airline/destinations?airlineCode=BA&amp;max=2&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h3 id="look-up-the-airline-icao-code-by-the-iata-code">Look up the airline ICAO code by the IATA code</h3>
+<p>If we need to know the IATA code for a particular airline but only have the airline's ICAO code, the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/airline-code-lookup">Airline Code Lookup API</a> can help us out. Just specify the IATA code in the query and send out the request:</p>
+<div class="highlight"><pre><span></span><code>curl --request GET <span class="se">\</span>
+     --header <span class="s1">&#39;Authorization: Bearer &lt;token&gt;&#39;</span> <span class="se">\</span>
+     --url https://test.api.amadeus.com/v1/reference-data/airlines?airlineCodes<span class="o">=</span>BA <span class="se">\</span>
+</code></pre></div>
+
+<p>The response is pretty straightforward:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/reference-data/airlines?airlineCodes=BA&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;airline&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;BA&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;icaoCode&quot;</span><span class="p">:</span> <span class="s2">&quot;BAW&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;businessName&quot;</span><span class="p">:</span> <span class="s2">&quot;BRITISH AIRWAYS&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;commonName&quot;</span><span class="p">:</span> <span class="s2">&quot;BRITISH A/W&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h3 id="search-for-flight-and-fare-availability">Search for flight and fare availability</h3>
+<p>With the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-availabilities-search">Flight Availabilities Search API</a> you can check the flight and fare availability for any itinerary. This refers to the full inventory of fares available for an itinerary at any given time. The concept of flight availability originated in the early days of flight booking as a way for agents to check what options existed for their travelers’ itineraries.</p>
+<p>Here’s an example request for a one-way flight from Mad (MIA) to Atlanta (ATL) for one traveler departing on December 12, 2021: </p>
+<p><code>POST https://test.api.amadeus.com/v1/shopping/availability/flight-availabilities</code></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;originDestinations&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;originLocationCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MIA&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;destinationLocationCode&quot;</span><span class="p">:</span> <span class="s2">&quot;ATL&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;departureDateTime&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-11-01&quot;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;travelers&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;travelerType&quot;</span><span class="p">:</span> <span class="s2">&quot;ADULT&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;sources&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;GDS&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>The response contains a list of available flights matching our request criteria (for the sake of this example, we only show the first result). Each flight availability includes descriptive data about the flight and an <code>availabilityClasses</code> list containing the available fare classes and the number of bookable seats remaining in each fare class.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-availability&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;originDestinationId&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;GDS&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;instantTicketingRequired&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;paymentCardRequired&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;duration&quot;</span><span class="p">:</span> <span class="s2">&quot;PT1H54M&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;segments&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;numberOfStops&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                    <span class="nt">&quot;blacklistedInEU&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                    <span class="nt">&quot;departure&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MIA&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;at&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-11-01T05:30:00&quot;</span>
+                    <span class="p">},</span>
+                    <span class="nt">&quot;arrival&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;ATL&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;terminal&quot;</span><span class="p">:</span> <span class="s2">&quot;S&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;at&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-11-01T07:24:00&quot;</span>
+                    <span class="p">},</span>
+                    <span class="nt">&quot;carrierCode&quot;</span><span class="p">:</span> <span class="s2">&quot;DL&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;2307&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;aircraft&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;321&quot;</span>
+                    <span class="p">},</span>
+                    <span class="nt">&quot;operating&quot;</span><span class="p">:</span> <span class="p">{},</span>
+                    <span class="nt">&quot;availabilityClasses&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;J&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;C&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;D&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;I&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;Z&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;W&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;Y&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;B&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;M&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;H&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;Q&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;K&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;L&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;U&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;T&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;E&quot;</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+</code></pre></div>
+
+<p>Note that airlines’ bookable seat counters goe up to a maximum of 9, even if more seats are available in that fare class. If there are less than 9 bookable seats available, the exact number is displayed.  </p>
+<h3 id="search-branded-fares">Search branded fares</h3>
+<p>Branded fares are airfares that bundle tickets with extras, such as checked bags, seat selection, refundability or loyalty points accrual. Each airline defines and packages its own branded fares and they vary from one airline to another. Branded fares not only help build brand recognition and loyalty, but also offer travelers an attractive deal as the incremental cost of the fare is usually less than that of buying the included services à la carte.  </p>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/branded-fares-upsell">Branded Fares Upsell API</a> receives flight offers from the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> and returns branded fares as flight offers which can be easily passed to the next step in the booking funnel. The booking flow is the following: </p>
+<ul>
+<li>Search for flights using the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a>. </li>
+<li>Find branded fare options for a selected flight using the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/branded-fares-upsell">Branded Fares Upsell API</a>. </li>
+<li>Confirm the fare and get the final price using the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a>. </li>
+<li>Book the flight using the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a>. </li>
+</ul>
+<p>Let's see an example of how to search for branded fares. </p>
+<p>You can build the request by passing the flight-offer object from the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> into the body of the <code>POST</code> request:</p>
+<div class="highlight"><pre><span></span><code>POST https://test.api.amadeus.com/v1/shopping/flight-offers/upselling
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p">{</span> 
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span> 
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-offers-upselling&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;flightOffers&quot;</span><span class="p">:</span> <span class="p">[</span> 
+      <span class="p">{</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-offer&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;GDS&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;instantTicketingRequired&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;nonHomogeneous&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;oneWay&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;lastTicketingDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-06-12&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;numberOfBookableSeats&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="nt">&quot;itineraries&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;duration&quot;</span><span class="p">:</span> <span class="s2">&quot;PT6H10M&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;segments&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;departure&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MAD&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;terminal&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;at&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-06-22T17:40:00&quot;</span>
+                            <span class="p">},</span>
+                            <span class="nt">&quot;arrival&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;FCO&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;terminal&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;at&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-06-22T20:05:00&quot;</span>
+                            <span class="p">},</span>
+                            <span class="nt">&quot;carrierCode&quot;</span><span class="p">:</span> <span class="s2">&quot;AZ&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;63&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;aircraft&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;32S&quot;</span>
+                            <span class="p">},</span>
+                            <span class="nt">&quot;operating&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&quot;carrierCode&quot;</span><span class="p">:</span> <span class="s2">&quot;AZ&quot;</span>
+                            <span class="p">},</span>
+                            <span class="nt">&quot;duration&quot;</span><span class="p">:</span> <span class="s2">&quot;PT2H25M&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;13&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;numberOfStops&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                            <span class="nt">&quot;blacklistedInEU&quot;</span><span class="p">:</span> <span class="kc">false</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;departure&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;FCO&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;terminal&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;at&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-06-22T21:50:00&quot;</span>
+                            <span class="p">},</span>
+                            <span class="nt">&quot;arrival&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;ATH&quot;</span><span class="p">,</span>
+                                <span class="nt">&quot;at&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-06-23T00:50:00&quot;</span>
+                            <span class="p">},</span>
+                            <span class="nt">&quot;carrierCode&quot;</span><span class="p">:</span> <span class="s2">&quot;AZ&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;722&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;aircraft&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;32S&quot;</span>
+                            <span class="p">},</span>
+                            <span class="nt">&quot;operating&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&quot;carrierCode&quot;</span><span class="p">:</span> <span class="s2">&quot;AZ&quot;</span>
+                            <span class="p">},</span>
+                            <span class="nt">&quot;duration&quot;</span><span class="p">:</span> <span class="s2">&quot;PT2H&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;14&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;numberOfStops&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                            <span class="nt">&quot;blacklistedInEU&quot;</span><span class="p">:</span> <span class="kc">false</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;81.95&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;18.00&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;fees&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="p">{</span>
+                        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;SUPPLIER&quot;</span>
+                    <span class="p">},</span>
+                    <span class="p">{</span>
+                        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;TICKETING&quot;</span>
+                    <span class="p">}</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;grandTotal&quot;</span><span class="p">:</span> <span class="s2">&quot;81.95&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;additionalServices&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="p">{</span>
+                        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;45.00&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;CHECKED_BAGS&quot;</span>
+                    <span class="p">}</span>
+                <span class="p">]</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;pricingOptions&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;fareType&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PUBLISHED&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;includedCheckedBagsOnly&quot;</span><span class="p">:</span> <span class="kc">false</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;validatingAirlineCodes&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;AZ&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;travelerPricings&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;travelerId&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;fareOption&quot;</span><span class="p">:</span> <span class="s2">&quot;STANDARD&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;travelerType&quot;</span><span class="p">:</span> <span class="s2">&quot;ADULT&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;81.95&quot;</span><span class="p">,</span>
+                        <span class="nt">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;18.00&quot;</span>
+                    <span class="p">},</span>
+                    <span class="nt">&quot;fareDetailsBySegment&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;segmentId&quot;</span><span class="p">:</span> <span class="s2">&quot;13&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;cabin&quot;</span><span class="p">:</span> <span class="s2">&quot;ECONOMY&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;fareBasis&quot;</span><span class="p">:</span> <span class="s2">&quot;OOLGEU1&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;O&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;includedCheckedBags&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">0</span>
+                            <span class="p">}</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&quot;segmentId&quot;</span><span class="p">:</span> <span class="s2">&quot;14&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;cabin&quot;</span><span class="p">:</span> <span class="s2">&quot;ECONOMY&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;fareBasis&quot;</span><span class="p">:</span> <span class="s2">&quot;OOLGEU1&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;brandedFare&quot;</span><span class="p">:</span> <span class="s2">&quot;ECOLIGHT&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;O&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;includedCheckedBags&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">0</span>
+                            <span class="p">}</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span> 
+    <span class="p">]</span>
+  <span class="p">}</span> 
+<span class="p">}</span>  
+</code></pre></div>
+
+<h3 id="search-for-personalized-destination-recommendations">Search for personalized destination recommendations</h3>
+<p>The <a href="https://developers.amadeus.com/self-service/category/trip/api-doc/travel-recommendations">Travel Recommendations API</a>  provides personalized destinations based on the traveler's location and an input destination, such as a previously searched flight destination or city of interest.</p>
+<p>For example, for a traveler based in San Francisco who has searched for multiple flights to Barcelona, what other similar destinations the API could recommend? The API takes as input the country of the traveler and the IATA code of the city that was searched, in our case this will be US and BCN respectively. </p>
+<p><code>GET https://test.api.amadeus.com/v1/reference-data/recommended-locations?cityCodes=BCN&amp;travelerCountryCode=US</code></p>
+<p>The response will look like this:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-date&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;origin&quot;</span><span class="p">:</span> <span class="s2">&quot;SFO&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;ROM&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;departureDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-09-19&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;returnDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-09-23&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;348.75&quot;</span>
+     <span class="p">},</span>
+     <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&quot;flightDestinations&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=SFO&amp;departureDate=2021-04-15,2021-10-11&amp;oneWay=false&amp;duration=1,15&amp;nonStop=false&amp;viewBy=DURATION&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;flightOffers&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=SFO&amp;destinationLocationCode=ROM&amp;departureDate=2021-09-19&amp;returnDate=2021-09-23&amp;adults=1&amp;nonStop=false&quot;</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+</code></pre></div>
+
+<p>If you want to take it to the next level, you can call the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-cheapest-date-search">Flight Cheapest Date Search API</a> to let the users know not only the recommended destinations but also what are the cheapest dates to visit any of these cities. For real-time flights, you can also call the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a>. The <a href="https://developers.amadeus.com/self-service/category/trip/api-doc/travel-recommendations">Travel Recommendations API</a> has returned links to both APIs. </p>
+<h3 id="search-for-recommended-nearby-destinations">Search for recommended nearby destinations</h3>
+<p>With the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-nearest-relevant">Airport Nearest Relevant API</a> you can find the closest major airports to a starting point. By default, results are sorted by relevance but they can also be sorted by <code>distance</code>, <code>flights</code>, <code>travelers</code> using the parameter <code>sort</code>.</p>
+<div class="admonition information">
+<p class="admonition-title">Information</p>
+<p>To get the latitude and longitude of a city you can use the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-and-city-search">Airport &amp; City Search API</a> using the city's IATA code.</p>
+</div>
+<p>Let's call the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-nearest-relevant">Airport Nearest Relevant API</a> to find airports within the 500km radius of Madrid.</p>
+<p><code>GET https://test.api.amadeus.com/v1/reference-data/locations/airports?latitude=40.416775&amp;longitude=-3.703790&amp;radius=500</code></p>
+<p>A part of the response looks like:</p>
+<p><div class="highlight"><pre><span></span><code>        <span class="p">{</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;subType&quot;</span><span class="p">:</span> <span class="s2">&quot;AIRPORT&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;AIRPORT&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;detailedName&quot;</span><span class="p">:</span> <span class="s2">&quot;BARCELONA/ES:AIRPORT&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;timeZoneOffset&quot;</span><span class="p">:</span> <span class="s2">&quot;+02:00&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;BCN&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;geoCode&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;latitude&quot;</span><span class="p">:</span> <span class="mf">41.29694</span><span class="p">,</span>
+                <span class="nt">&quot;longitude&quot;</span><span class="p">:</span> <span class="mf">2.07833</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;cityName&quot;</span><span class="p">:</span> <span class="s2">&quot;BARCELONA&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;cityCode&quot;</span><span class="p">:</span> <span class="s2">&quot;BCN&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;countryName&quot;</span><span class="p">:</span> <span class="s2">&quot;SPAIN&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;countryCode&quot;</span><span class="p">:</span> <span class="s2">&quot;ES&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;regionCode&quot;</span><span class="p">:</span> <span class="s2">&quot;EUROP&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;distance&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">496</span><span class="p">,</span>
+                <span class="nt">&quot;unit&quot;</span><span class="p">:</span> <span class="s2">&quot;KM&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;analytics&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;flights&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;score&quot;</span><span class="p">:</span> <span class="mi">25</span>
+                <span class="p">},</span>
+                <span class="nt">&quot;travelers&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;score&quot;</span><span class="p">:</span> <span class="mi">25</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;relevance&quot;</span><span class="p">:</span> <span class="mf">5.11921</span>
+        <span class="p">}</span>
+</code></pre></div>
+What we want to do at this point, is to find the cheapest dates for all these destinations. </p>
+<p>We can do this by calling the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-cheapest-date-search">Flight Cheapest Date Search API</a> which finds the cheapest dates to travel from one city to another. Let's see, for example, the cheapest dates to fly to Barcelona in November 2021. </p>
+<p><code>GET https://test.api.amadeus.com/v1/shopping/flight-dates?origin=MAD&amp;destination=BCN&amp;departureDate=2021-05-01,2021-05-30</code></p>
+<p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-date&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;origin&quot;</span><span class="p">:</span> <span class="s2">&quot;MAD&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;BCN&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;departureDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-29&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;returnDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-06-11&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;73.61&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;flightDestinations&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&amp;departureDate=2021-05-01,2021-05-30&amp;oneWay=false&amp;duration=1,15&amp;nonStop=false&amp;viewBy=DURATION&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;flightOffers&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&amp;destinationLocationCode=BCN&amp;departureDate=2022-09-29&amp;returnDate=2021-06-11&amp;adults=1&amp;nonStop=false&quot;</span>
+    <span class="p">},</span>
+<span class="p">{</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-date&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;origin&quot;</span><span class="p">:</span> <span class="s2">&quot;MAD&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;BCN&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;departureDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-05&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;returnDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-06&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;79.67&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;flightDestinations&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&amp;departureDate=2021-05-01,2021-05-30&amp;oneWay=false&amp;duration=1,15&amp;nonStop=false&amp;viewBy=DURATION&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;flightOffers&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&amp;destinationLocationCode=BCN&amp;departureDate=2021-05-05&amp;returnDate=2021-05-06&amp;adults=1&amp;nonStop=false&quot;</span>
+    <span class="p">}</span>
+<span class="p">},</span>
+<span class="p">{</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-date&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;origin&quot;</span><span class="p">:</span> <span class="s2">&quot;MAD&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;BCN&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;departureDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-02&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;returnDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-06&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;80.61&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;flightDestinations&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=MAD&amp;departureDate=2021-05-01,2021-05-30&amp;oneWay=false&amp;duration=1,15&amp;nonStop=false&amp;viewBy=DURATION&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;flightOffers&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&amp;destinationLocationCode=BCN&amp;departureDate=2021-05-02&amp;returnDate=2021-05-06&amp;adults=1&amp;nonStop=false&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+As you can see above, in the results we have a list of dates for a roundtrip from Madrid to Barcelona ordered by the lowest price.</p>
+<p>In the last step, we want to let the traveler perform a flight search for any of the above dates that are convenient for them. That is very easy with our APIs, as the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-cheapest-date-search">Flight Cheapest Date Search API</a> for each result contains a link to the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a>. For example, if we want to perform a flight search for the first result, we only have to take the link provided and make an API call:</p>
+<p><code>GET https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MAD&amp;destinationLocationCode=BCN&amp;departureDate=2021-05-29&amp;returnDate=2021-06-11&amp;adults=1&amp;nonStop=false</code></p>
+<h3 id="search-for-a-city-that-has-an-airport">Search for a city that has an airport</h3>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-and-city-search">Airport &amp; City Search API</a> finds airports and cities that match a specific word or a string of letters. Using this API, you can automatically suggest
+airports based on what the traveler enters in the search field. The API provides a list of airports/cities ordered by yearly passenger volume with the name, 3-letter IATA code, time zone and coordinates of each airport. </p>
+<p>The main difference between the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-and-city-search">Airport &amp; City Search API</a> and <a href="https://developers.amadeus.com/self-service/category/trip/api-doc/city-search">City Search API</a> is that the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/airport-and-city-search">Airport &amp; City Search API</a> only shows cities that have an airport, while the <a href="https://developers.amadeus.com/self-service/category/trip/api-doc/city-search">City Search API</a> retrieves any city that matches a search keyword.</p>
+<h3 id="compare-the-flight-price-to-histrocal-fares">Compare the flight price to histrocal fares</h3>
+<p>When booking a flight, travelers need to be confident that they're getting a good deal. You can compare a flight price to historical fares for the same flight route using the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-price-analysis">Flight Price Analysis API</a>. It uses an Artificial Intelligence algorithm trained on Amadeus historical flight booking data to show how current flight prices compare to historical fares and whether the price of a flight is below or above average.</p>
+<p>Let's see how it works. In our example we will be flying from Madrid (MAD) to Paris (CDG) on 12 December 2022. We will check prices in Euros for a one way ticket.</p>
+<div class="highlight"><pre><span></span><code>GET https://test.api.amadeus.com/v1/analytics/itinerary-price-metrics?originIataCode<span class="o">=</span>MAD<span class="p">&amp;</span><span class="nv">destinationIataCode</span><span class="o">=</span>CDG<span class="p">&amp;</span><span class="nv">departureDate</span><span class="o">=</span><span class="m">2021</span>-03-21<span class="p">&amp;</span><span class="nv">currencyCode</span><span class="o">=</span>EUR<span class="p">&amp;</span><span class="nv">oneWay</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+
+<p>This is what we get in the response:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;warnings&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">22443</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;WARNING&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;detail&quot;</span><span class="p">:</span> <span class="s2">&quot;Unsupported currency code. Supported currencies are CAD,HKD,ISK,PHP,DKK,HUF,CZK,AUD,RON,SEK,IDR,INR,BRL,RUB,HRK,JPY,THB,CHF,SGD,PLN,BGN,TRY,CNY,NOK,NZD,ZAR,USD,MXN,ILS,GBP,KRW,MYR&quot;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;itinerary-price-metric&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;origin&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;MAD&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;destination&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;iataCode&quot;</span><span class="p">:</span> <span class="s2">&quot;CDG&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;departureDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2022-12-12&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;transportType&quot;</span><span class="p">:</span> <span class="s2">&quot;FLIGHT&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;currencyCode&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;oneWay&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nt">&quot;priceMetrics&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;29.59&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;quartileRanking&quot;</span><span class="p">:</span> <span class="s2">&quot;MINIMUM&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;76.17&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;quartileRanking&quot;</span><span class="p">:</span> <span class="s2">&quot;FIRST&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;129.24&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;quartileRanking&quot;</span><span class="p">:</span> <span class="s2">&quot;MEDIUM&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;185.59&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;quartileRanking&quot;</span><span class="p">:</span> <span class="s2">&quot;THIRD&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;198.15&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;quartileRanking&quot;</span><span class="p">:</span> <span class="s2">&quot;MAXIMUM&quot;</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/analytics/flight-price-metrics?originIataCode=MAD&amp;destinationIataCode=CDG&amp;departureDate=2022-12-12&amp;currencyCode=EUR&amp;oneWay=True&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>Here we can see that the lowest price for such ticket should be 29.59 Euros and the highest 198.15 Euros. The first, medium and trird choices give you an idea about the possible price ranges for this flight.</p>
+<h2 id="confirm-fares">Confirm Fares</h2>
+<p>The availability and price of airfare fluctuate, so it’s important to confirm
+before proceeding to book. This is especially true if time passes between the
+initial search and the decision to book, as fares are limited and there are
+thousands of bookings occurring every minute. During this step, you can also
+add ancillary products like extra bags or legroom. For that you can use the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a>.</p>
+<p>Once a flight has been selected, you’ll need to confirm the availability and
+price of the fare. This is where the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a> comes in. This API
+returns the final fare price (including taxes and fees) of flights from the
+<a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search</a> as well as pricing for ancillary products and the
+payment information that will be needed to make the final booking. </p>
+<p>The body to be sent via <code>POST</code> is built by a new object of type
+<code>flight-offers-pricing</code> composed by a list of <code>flight-offers</code> (up to 6) +
+payment information.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+   <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-offers-princing&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;flightOffers&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;flight-offer&quot;</span> <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;payment&quot;</span> <span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span> <span class="err">Payme</span><span class="kc">nt</span><span class="err">_Objec</span><span class="kc">t</span> <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+</code></pre></div>
+
+<h2 id="return-fare-rules">Return fare rules</h2>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a> confirms the final price and availability of a fare. It also returns detailed fare rules, including the cancellation policy and other information. To get the fare rules, add the parameter <code>include=detailed-fare-rules</code> to your API call, as shown below: </p>
+<div class="highlight"><pre><span></span><code>POST https://test.api.amadeus.com/v1/shopping/flight-offers/pricing?include<span class="o">=</span>detailed-fare-rules
+</code></pre></div>
+
+<h2 id="book-a-flight">Book a Flight</h2>
+<p>Once the fare is confirmed, you’re ready to use the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a>
+to perform the actual booking. This API lets you log a reservation in the
+airlines’ systems and create a <a href="https://developers.amadeus.com/blog/what-is-pnr-booking-reference">PNR</a>, and returns a unique Id number and the
+reservation details. If you’re using an airline consolidator, the PNR will be
+automatically sent to the consolidator for ticket issuance. <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Visit the Flight
+Create Orders documentation
+page</a>
+for more details on this API.</p>
+<p>Remember, you need to be able to issue a ticket to make bookings with our
+<a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a>. To access the API in production, you need to either
+sign a contract with an airline consolidator or be accredited to issue tickets
+yourself. </p>
+<p>You can see the process step to step in this <a href="https://www.youtube.com/watch?v=OEX7k6d52Ic&amp;feature=youtu.be">video tutorial</a>.</p>
+<p>If you are interested in knowing more about issuing tickets in travel industry, please check out this <a href="https://developers.amadeus.com/blog/what-is-air-ticketing">article</a>. </p>
+<h2 id="issue-a-ticket">Issue a ticket</h2>
+<p>Once the booking is made, you need to complete payment. In most cases, you’ll
+receive payment from the customer and then pay the airline, typically via an
+industry-specific settlement procedure like the BSP or ARC (more on those
+later).</p>
+<p>In the final step, a flight ticket is issued. In industry terms, a flight
+ticket is a confirmation that payment has been received, the reservation has
+been logged, and the customer has the right to enjoy the flight. For <a href="https://www.iata.org/about/members/Pages/airline-list.aspx">IATA
+member airlines</a>,
+only certain accredited parties can issue tickets. In the next section, we’ll
+go into detail about your options for managing this final step in the booking
+process.</p>
+<h2 id="view-the-aircraft-cabin-layout">View the aircraft cabin layout</h2>
+<p>With the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/seatmap-display">Seatmap Display API</a> you can view the aircraft cabin layout: </p>
+<ul>
+<li><code>deckConfiguration</code> - the dimensions of the passenger deck in (x,y) coordinates, including the location of the wings, exit rows, and cabins. These dimensions form a grid on which you will later place facilities and seats.</li>
+<li><code>facilities</code> - the (x,y) coordinates of aircraft facilities, such as bathrooms or galleys.</li>
+<li><code>seats</code> - the (x,y) coordinates of all seats on the aircraft, with their respective availability status, characteristics, and prices.</li>
+</ul>
+<p>To help you build a more consistent display, the API returns a uniform width for all cabins and classes. Rows with special seating like business class or extra-legroom seats have fewer seats per row (e.g., 4 seats for width of 7 coordinates) than economy rows (e.g. 7 seats for a width of 7 coordinates).</p>
+<p>Check out this <a href="https://youtu.be/uTOQjGsZLfI">video tutorial</a> for more details. </p>
+<h3 id="display-in-flight-amenities">Display in-flight amenities</h3>
+<p>Both endpoints of the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/seatmap-display">Seatmap Display API</a> return information about the following in-flight amenities:</p>
+<ul>
+<li>Seat</li>
+<li>Wi-fi</li>
+<li>Entertainment</li>
+<li>Power</li>
+<li>Food</li>
+<li>Beverage</li>
+</ul>
+<h3 id="select-a-seat">Select a seat</h3>
+<p>Requests to either endpoint of the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/seatmap-display">Seatmap Display API</a> will return a list of seating options with their characteristics, pricing, and coordinates. Let's look at an example response:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+                <span class="nt">&quot;cabin&quot;</span><span class="p">:</span> <span class="s2">&quot;M&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;20D&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;characteristicsCodes&quot;</span><span class="p">:</span> <span class="p">[</span>
+                  <span class="s2">&quot;A&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;CH&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;RS&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;travelerPricing&quot;</span><span class="p">:</span> <span class="p">[</span>
+                  <span class="p">{</span>
+                    <span class="nt">&quot;travelerId&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;seatAvailabilityStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;AVAILABLE&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+                      <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+                      <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="s2">&quot;17.00&quot;</span><span class="p">,</span>
+                      <span class="nt">&quot;base&quot;</span><span class="p">:</span> <span class="s2">&quot;17.00&quot;</span><span class="p">,</span>
+                      <span class="nt">&quot;taxes&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00&quot;</span><span class="p">,</span>
+                          <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="s2">&quot;SUPPLIER&quot;</span>
+                        <span class="p">}</span>
+                      <span class="p">]</span>
+                    <span class="p">}</span>
+                  <span class="p">}</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">{</span>
+                  <span class="nt">&quot;x&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+                  <span class="nt">&quot;y&quot;</span><span class="p">:</span> <span class="mi">4</span>
+                <span class="p">}</span>
+              <span class="p">},</span>
+</code></pre></div>
+
+<p>For each seat, the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/seatmap-display">Seatmap Display API</a> provides a seatAvailabilityStatus so you can indicate which seats are currently available for booking. Seats may have one of three availability statuses:</p>
+<ul>
+<li><code>AVAILABLE</code> – the seat is not occupied and is available to book.</li>
+<li><code>BLOCKED</code> – the seat is not occupied but isn’t available to book for the user. This is usually due to the passenger type (e.g., children may not sit in exit rows) or their fare class (e.g., some seats may be reserved for flyers in higher classes).</li>
+<li><code>OCCUPIED</code> – the seat is  occupied and unavailable to book.</li>
+</ul>
+<p>If a flight is fully booked, the API returns an OCCUPIED status for all seats. In most cases, fully booked flights are filtered out during search with the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a> or when confirming the price with the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a>. The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a> returns an error message if you try to book an unavailable seat. For more information on the booking flow, check out how to build a flight booking engine.</p>
+<p>Once your user has selected their seat, the next step is to add the desired seat to the flight offer and prepare them for booking.</p>
+<p>In the above example response, seat <code>20D</code> is indicated as <code>AVAILABLE</code>. For your user to be able to book the seat, you must add the seat to the flightOffer object and call <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price</a> to get a final order summary with the included seat.</p>
+<p>To include the seat in the <code>flightOffer</code> object, add it to <code>fareDetailsBySegment</code> → <code>additionalServices</code> → <code>chargeableSeatNumber</code>, as shown below:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;fareDetailsBySegment&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+            <span class="nt">&quot;additionalServices&quot;</span><span class="p">:</span> <span class="p">{</span>
+             <span class="nt">&quot;chargeableSeatNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;20D&quot;</span>
+              <span class="p">},</span>
+              <span class="nt">&quot;segmentId&quot;</span><span class="p">:</span> <span class="s2">&quot;60&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;cabin&quot;</span><span class="p">:</span> <span class="s2">&quot;ECONOMY&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;fareBasis&quot;</span><span class="p">:</span> <span class="s2">&quot;NLYO5L&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;brandedFare&quot;</span><span class="p">:</span> <span class="s2">&quot;LITE&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;N&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;includedCheckedBags&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">0</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+</code></pre></div>
+
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a> then returns the <code>flightOffer</code> object with the price of the chosen seat included within <code>additionalServices</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;additionalServices&quot;</span><span class="p">:</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;SEATS&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;17.00&quot;</span>
+            <span class="p">}</span>
+</code></pre></div>
+
+<p>You can use the same process to select seats for multiple passengers. For each passenger, you must add the selected seats in <code>fareDetailsBySegment</code> for each <code>travelerId</code> within the flight offer.</p>
+<p>At this point, you now have a priced <code>flightOffer</code> which includes your user's selected seat. The final step is to book the flight using the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a>. To do this, simply pass the <code>flightOffer</code> object into a request to the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a>, which will book the flight and return an order summary and a booking Id.</p>
+<h2 id="add-additional-baggage">Add additional baggage</h2>
+<h3 id="search-additional-baggage-options">Search additional baggage options</h3>
+<p>The first step is to find the desired flight offer using the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-search">Flight Offers Search API</a>. Each flight offer contains an <code>additionalServices</code> field with the types of additional services available, in this case bags, and the maximum price of the first additional bag. Note that at this point, the price is for informational purposes only.  </p>
+<p>To get the final price of the added baggage with the airline policy and the traveler's tier level taken into account, you must call the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a>. To do this, add the <code>include=bags</code> parameter in the path of the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a>: </p>
+<div class="highlight"><pre><span></span><code>POST https://test.api.amadeus.com/v1/shopping/flight-offers/pricing?include<span class="o">=</span>bags 
+</code></pre></div>
+
+<p>As you see below, the API returns the catalog of baggage options with the price and quantity (or weight): </p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;bags&quot;</span><span class="p">:</span> <span class="p">{</span> 
+    <span class="nt">&quot;1&quot;</span><span class="p">:</span> <span class="p">{</span> 
+        <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;CHECKED_BAG&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span> 
+            <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;25.00&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;currencyCode&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span> 
+        <span class="p">},</span> 
+        <span class="nt">&quot;bookableByItinerary&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;segmentIds&quot;</span><span class="p">:</span> <span class="p">[</span> 
+            <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;14&quot;</span> 
+        <span class="p">],</span> 
+        <span class="nt">&quot;travelerIds&quot;</span><span class="p">:</span> <span class="p">[</span> 
+            <span class="s2">&quot;1&quot;</span> 
+        <span class="p">]</span> 
+    <span class="p">}</span> 
+    <span class="nt">&quot;2&quot;</span><span class="p">:</span> <span class="p">{</span>  
+        <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> 
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;CHECKED_BAG&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span> 
+            <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;50.00&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;currencyCode&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span> 
+        <span class="p">},</span> 
+        <span class="nt">&quot;bookableByItinerary&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;segmentIds&quot;</span><span class="p">:</span> <span class="p">[</span> 
+            <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;14&quot;</span> 
+        <span class="p">],</span> 
+        <span class="nt">&quot;travelerIds&quot;</span><span class="p">:</span> <span class="p">[</span> 
+            <span class="s2">&quot;1&quot;</span> 
+        <span class="p">]</span> 
+    <span class="p">}</span> 
+<span class="p">}</span> 
+</code></pre></div>
+
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a> returns two bag offers for the given flight. The catalog shows that either one or two bags are available to be booked per passenger. Higher bag quantity will be rejected due to the airline's policy.</p>
+<p>In the example above, the price of two bags is double that of one bag, though some airlines do offer discounts for purchasing more than one checked bag. Each bag offer is coupled to the specific segment and traveler Id returned in each bag offer. </p>
+<p>If there is no extra baggage service available, the API won’t return a baggage catalog. </p>
+<h3 id="add-additional-baggage-to-the-flight-offer">Add additional baggage to the flight offer</h3>
+<p>Next, you need to add the additional baggage to the desired flight segments. This gives you the flexibility to include extra bags on only certain segments of the flight.  </p>
+<p>Fill in <code>chargeableCheckedBags</code> with the desired quantity (or weight, depending on what the airline returns) in <code>travelerPricings/fareDetailsBySegment/additionalServices</code>, as shown below:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;fareDetailsBySegment&quot;</span><span class="p">:</span> <span class="p">[{</span> 
+    <span class="nt">&quot;segmentId&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;cabin&quot;</span><span class="p">:</span> <span class="s2">&quot;ECONOMY&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;fareBasis&quot;</span><span class="p">:</span> <span class="s2">&quot;TNOBAGD&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;brandedFare&quot;</span><span class="p">:</span> <span class="s2">&quot;GOLIGHT&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;T&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;includedCheckedBags&quot;</span><span class="p">:</span> <span class="p">{</span> 
+        <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">0</span> 
+    <span class="p">},</span> 
+    <span class="nt">&quot;additionalServices&quot;</span><span class="p">:</span> <span class="p">{</span> 
+        <span class="nt">&quot;chargeableCheckedBags&quot;</span><span class="p">:</span> <span class="p">{</span> 
+            <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span> 
+        <span class="p">}</span> 
+    <span class="p">}</span> 
+<span class="p">}]</span> 
+</code></pre></div>
+
+<h3 id="confirm-the-final-price-and-book">Confirm the final price and book</h3>
+<p>Once you’ve added the desired bags to the flight order, you need to call the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a> to get the final price of the flight with all additional services included. Once this is done, you can then call the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a> to book the flight. If you want to add different numbers of bags for different itineraries, you can do it following the same flow. </p>
+<p>If the desired flight you want to book, does not permit the additional service, the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a> will reject the booking and return the following error:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span> 
+    <span class="nt">&quot;errors&quot;</span><span class="p">:</span> <span class="p">[{</span> 
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span> 
+        <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">38034</span><span class="p">,</span> 
+        <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;ONE OR MORE SERVICES ARE NOT AVAILABLE&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;detail&quot;</span><span class="p">:</span> <span class="s2">&quot;Error booking additional services&quot;</span> 
+    <span class="p">}]</span> 
+<span class="p">}</span> 
+</code></pre></div>
+
+<h2 id="check-the-flight-status">Check the flight status</h2>
+<p>The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/on-demand-flight-status">On-Demand Flight Status API</a> provides real-time flight schedule data including up-to-date departure and arrival times, terminal and gate information, flight duration and real-time delay status.</p>
+<p>To get this information, just send a query with the IATA carrier code, flight number and scheduled departure date, and you'll be up to date about your flight schedule.</p>
+<h2 id="check-for-any-flight-delays">Check for any flight delays</h2>
+<p>For any traveller it's quite important to know how far in advance they should get to the airport. The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-delay-prediction">Flight Delay Prediction API</a> estimates the probability of a specific flight being delayed. </p>
+<h2 id="check-the-on-time-performance-of-an-airport">Check the on-time performance of an airport</h2>
+<p>Another way to get prepared for any delays, is checking the on-time performance of the actual airport. The <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-delay-prediction">Flight Delay Prediction API</a> estimates the probability of a specific flight being delayed. </p>
+<p>The search query is very simple. In our query we only need to provide our flight departure date and the departure airport. For example, JFK on 12 December 2022.</p>
+<div class="highlight"><pre><span></span><code>GET https://test.api.amadeus.com/v1/airport/predictions/on-time?airportCode<span class="o">=</span>JFK<span class="p">&amp;</span><span class="nv">date</span><span class="o">=</span><span class="m">2022</span>-12-12 
+</code></pre></div>
+
+<p>This is the result:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;JFK20221212&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;probability&quot;</span><span class="p">:</span> <span class="s2">&quot;0.928&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="s2">&quot;0.77541769&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;subType&quot;</span><span class="p">:</span> <span class="s2">&quot;on-time&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;prediction&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v1/airport/predictions/on-time?airportCode=JFK&amp;date=2022-12-12&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>The <code>probability</code> parameter shows the probability of the airport running smoothly. In our example, this metric means that there is a 92.8% chance that there will be no delays.</p>
+<h2 id="get-a-direct-link-to-the-airline-check-in-page">Get a direct link to the airline check-in page</h2>
+<p>Suppose we are building an app with an integrated check-in flow for a particular airline. In this case, we can leverage the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-check-in-links">Flight Check-in Links  API</a> to generate a link to the airline's official check-in page in a required language for both web and mobile platforms. The only parameter that we need to provide in our search query is the airline's IATA code. If required, we can request the links in a specific language, such as UK English (en-GB). This is what our request would look like:</p>
+<div class="highlight"><pre><span></span><code>curl --request GET <span class="se">\</span>
+     --header <span class="s1">&#39;Authorization: Bearer &lt;token&gt;&#39;</span> <span class="se">\</span>
+     --url https://test.api.amadeus.com/v2/reference-data/urls/checkin-links?airlineCode<span class="o">=</span>BA<span class="p">&amp;</span><span class="nv">language</span><span class="o">=</span>en-GB <span class="se">\</span>
+</code></pre></div>
+
+<p>This is what we get in the response:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="s2">&quot;https://test.api.amadeus.com/v2/reference-data/urls/checkin-links?airlineCode=BA&amp;language=EN-GB&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;checkin-link&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;BAEN-GBAll&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.britishairways.com/travel/olcilandingpageauthreq/public/en_gb&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;channel&quot;</span><span class="p">:</span> <span class="s2">&quot;All&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;checkin-link&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;BAEN-GBMobile&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.britishairways.com/travel/olcilandingpageauthreq/public/en_gb/device-mobile&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;channel&quot;</span><span class="p">:</span> <span class="s2">&quot;Mobile&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;checkin-link&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;BAEN-GBWeb&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.britishairways.com/travel/olcilandingpageauthreq/public/en_gb&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;channel&quot;</span><span class="p">:</span> <span class="s2">&quot;Web&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>Here we've got a dedicated link for web applications, a dedicated link for mobile applications and a link that works on all platforms.</p>
+<h2 id="cancel-a-reservation">Cancel a reservation</h2>
+<p>Just as you can help users book a flight with the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a>, you can now also help them cancel their reservations with the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-order-management">Flight Order Management</a> API. However, you have a limited window of time to cancel via API. If you’re working with an airline consolidator for ticketing, cancellations via API are generally only allowed while the order is queued for ticketing. Once the ticket has been issued, you’ll have to contact your consolidator directly to handle the cancellation.</p>
+<p>To call the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-order-management">Flight Order Management API</a>, you have pass as a parameter the flight-orderId from the Flight Create Orders API, such as:</p>
+<div class="highlight"><pre><span></span><code>DELETE https://test.api.amadeus.com/v1/booking/flight-orders/eJzTd9f3NjIJdzUGAAp%2fAiY
+</code></pre></div>
+
+<h2 id="view-reservation-details">View reservation details</h2>
+<p>With the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-order-management">Flight Order Management API</a> you can consult and check your flight reservation. </p>
+<p>To call the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-order-management">Flight Order Management API</a>, you have pass as a parameter the flight-orderId from the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a>, such as:</p>
+<div class="highlight"><pre><span></span><code>GET https://test.api.amadeus.com/v1/booking/flight-orders/eJzTd9f3NjIJdzUGAAp%2fAiY
+</code></pre></div>
+
+<h2 id="common-errors">Common Errors</h2>
+<h3 id="issuance-not-allowed-in-self-service">Issuance not allowed in Self Service</h3>
+<p>Self-Service users must work with an airline consolidator that can issue
+tickets on your behalf. In that case, the payment is not processed by the API
+but directly between you and the consolidator. Adding a form of payment to
+the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-create-orders">Flight Create Orders API</a> will be rejected by error INVALID FORMAT.</p>
+<h3 id="price-discrepancy">Price discrepancy</h3>
+<p>The price of airfare fluctuates constantly. Creating an order for a flight whose price is no longer valid at the time of booking will trigger the
+following error:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;errors&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span>
+      <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">37200</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;PRICE DISCREPANCY&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;detail&quot;</span><span class="p">:</span> <span class="s2">&quot;Current grandTotal price (2780.28) is different from request one (2779.58)&quot;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>If you receive this error, reconfirm the fare price with the <a href="https://developers.amadeus.com/self-service/category/air/api-doc/flight-offers-price">Flight Offers Price API</a> before booking.</p>
+<p>The following is a common error in the test environment, as you can perform many bookings without restrictions (no real payment), but the inventory is a copy of the real one, so if you book many seats, the inventory will be empty and you won't be able to book anymore.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+            <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span>
+            <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">34651</span><span class="p">,</span>
+            <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;SEGMENT SELL FAILURE&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;detail&quot;</span><span class="p">:</span> <span class="s2">&quot;Could not sell segment 1&quot;</span>
+        <span class="p">}</span>
+</code></pre></div>
+
+<h2 id="notes">Notes</h2>
+<h3 id="carriers-and-rates">Carriers and rates</h3>
+<ul>
+<li>Low cost carriers (LCCs), American Airlines are not available. Depending on the market, British Airways is also not available.</li>
+<li>Published rates only returned in Self-Service. Cannot access to negotiated rates, or any other special rates. </li>
+</ul>
+<h3 id="post-booking-modifications">Post-booking modifications</h3>
+<p>With the current version of our Self-Service APIs, you can’t add additional baggage after the flight has been booked. This and other post-booking modifications must be handled directly with the airline consolidator that is issuing tickets on your behalf.   </p>
+<h3 id="how-payment-works">How payment works</h3>
+<p>There are two things to consider regarding payments for flight booking:</p>
+<ul>
+<li>The payment between you (the app owner) and your customers (for the services provided + the price of the flight ticket). You decide how to collect this payment, it is not included in the API. A third party payment gateway, such as Stripe will be an easier solution for this.</li>
+<li>The payment between you and the consolidator (to be able to pay the airline and issue the flight ticket). This will be done between you and your consolidator of choice, and is to be agreed with the consolidator.</li>
+</ul>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: December 6, 2022
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../covid-19/" title="Covid-19 & travel Safety" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Covid-19 & travel Safety
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../hotels/" title="Hotels" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Hotels
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © Amadeus IT Group S.A.
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/amadeus4dev" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://discord.com/invite/cVrFBqx" target="_blank" rel="noopener" title="discord.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/amadeus4dev" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://www.linkedin.com/showcase/amadeus-for-developers" target="_blank" rel="noopener" title="www.linkedin.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.568ba93b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.2a81e305.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["foo", "header.autohide", "announce.dismiss"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
