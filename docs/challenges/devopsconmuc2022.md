@@ -18,7 +18,7 @@ In this challenge you will have to find the furthest german airports from Munich
 
 ## Leaderboard
 
-<div id="leaderboardhq" class="cleanslate"></div><script src="https://leaderboardhq.com/v1/4q0vsznn"></script>
+<iframe width="100%" height="800px" src="https://keepthescore.co/board/akayayjlgzr/" frameborder="0" allowfullscreen></iframe>
 
 <script src="https://cdn.logwork.com/widget/countdown.js"></script>
 <a href="https://logwork.com/countdown-xzyt" class="countdown-timer" data-style="columns" data-timezone="Europe/Berlin" data-date="2022-12-07 12:00">The challenge ends in...</a>
